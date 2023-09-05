@@ -1,12 +1,16 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import SearchList from '../../test/searching/src/Searching';
-import Search from './components/Search';
+import Navbar from './components/Navbar.js';
+import Home from './pages/Home.js';
 
 function App() {
   return (
-    <div className="App">
-      <Search/>
-    </div>
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path = '/' element = {<Home/>} />
+      </Routes>
+    </>
   );
 }
 
