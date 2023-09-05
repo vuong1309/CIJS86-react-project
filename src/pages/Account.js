@@ -3,7 +3,7 @@ import Main from '../components/Main.js';
 import Row from '../components/Row.js';
 import requests from '../Requests.js';
 
-const Home = () => {
+const Account = () => {
     return (
         <>
             <Main />
@@ -15,4 +15,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Account;
