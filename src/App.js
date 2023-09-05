@@ -1,12 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './pages/Home.js';
 import Signup from './pages/Signup';
 import Login from './pages/Login'
 import './App.css';
-import Navbar from './components/Navbar.js';
-import Account from './pages/Account.js';
 
 function App() {
   return (
