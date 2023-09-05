@@ -5,7 +5,7 @@ import Faqs from '../components/Faqs';
 import { faqs } from '../fixtures/faqs';
 import Footersignup from '../components/Footersignup'
 
-const Account = () => {
+const Home = () => {
     return (
         <>
         <div className=''>
