@@ -5,7 +5,7 @@ import Faqs from '../components/Faqs';
 import { faqs } from '../fixtures/faqs';
 import Footersignup from '../components/Footersignup'
 
-const Home = () => {
+const Account = () => {
     return (
         <>
         <div className=''>
@@ -34,4 +34,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Account;
