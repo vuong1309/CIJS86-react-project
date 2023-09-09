@@ -17,7 +17,7 @@ const Login = () => {
                         <div className='max-w-[320px] mx-auto py-16'>
                             <h1 className='text-3xl font-medium'>Sign In</h1>
                             <form className='w-full flex flex-col py-4'>
-                                <input className='p-3 my-2 bg-[#333] rounded' type='email' placeholder='Email or phone number' autoComplete='email'></input>
+                                <input className='p-3 my-2 bg-[#333] rounded' type='email' placeholder='Email' autoComplete='email'></input>
                                 <input className='p-3 my-2 bg-[#333] rounded' type='password' placeholder='Password' autoComplete='current-password'></input>
                                 <button className='py-3 my-6 bg-red-600 rounded font-medium'>Sign In</button>
                                 <div className='flex justify-between items-center text-sm text-slate-500'>
@@ -40,7 +40,7 @@ const Login = () => {
                     </div>
                 </div>
                     <Footersignup />  
-        </div>
+            </div>
         </>
     );
 };

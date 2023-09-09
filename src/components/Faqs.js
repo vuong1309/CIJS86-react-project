@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactComponent as PlusIcon } from '../assets/icon/icons8-plus.svg';
+import { ReactComponent as PlusIcon } from '../assets/icons/icons8-plus.svg';
 
 
 const Faqs = (props) => {
