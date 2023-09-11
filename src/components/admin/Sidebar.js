@@ -20,12 +20,13 @@ function Sidebar({menu}) {
         });
     }, [location.pathname])
 
+
     const __navigate = (id) => {
         setActive(id);
     }
 
   return (
-    <nav className='sidebar'>
+    <nav className='sidebar absolute'>
             <div className='sidebar-container'>
                 <div className='sidebar-logo-container'>
                     <img
