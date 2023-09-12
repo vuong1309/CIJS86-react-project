@@ -18,7 +18,6 @@ const Admin = () => {
         };
     return (
         <div>
-            <h1 className='text-white'>Admin Page</h1>
                 <div className='dashboard-container'>
                     <Sidebar menu={sidebar_menu} />
                     
