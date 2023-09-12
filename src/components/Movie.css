@@ -1,8 +1,0 @@
-.movie-container {
-    transition: .5s;
-}
-
-.movie-container:hover {
-    transform: scale(1.2);
-    z-index: 2;
-}
