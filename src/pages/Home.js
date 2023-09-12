@@ -16,13 +16,12 @@ const Home = () => {
                     alt='/'
                     >
                 </img>
-                <div className='absolute bottom-[30%] text-center text-white w-full'>
-                <h1 className='text-3xl	font-bold lg:font-black lg:text-5xl'>The biggest local and international hits. All here from 70,000 ₫.</h1>
-                <p>Join today. Cancel anytime.</p>
-                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div className='hidden absolute bottom-[30%] text-center text-white w-full mx-auto sm:block sm:mx-5'>
+                <h1 className='text-3xl	font-bold lg:font-black lg:text-5xl max-w-[1075px] mx-auto'>The biggest local and international hits. All here from 70,000 ₫.</h1>
+                <p className='mt-4 font-normal text-2xl lg:text-xl'>Join today. Cancel anytime.</p>
                 </div>
             </div>
-            <div className='bg-[url(https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/93122675-8500-4b7c-818b-89a3474a06ab/VN-en-20230814-popsignuptwoweeks-perspective_alpha_website_medium.jpg)]'>
+            <div className=''>
             </div>
             <div>
                 {stories.map((v, i) => (

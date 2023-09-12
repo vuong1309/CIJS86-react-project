@@ -97,7 +97,7 @@ const AdminLogin = () => {
                 setError(null);
                 setLoading(false);
             // Redirect to the Account page
-                window.location.href = "/adminafterlogin";
+                window.location.href = "/dashboard";
             } else {
             // Authentication failed
                 setError("Incorrect email or password");

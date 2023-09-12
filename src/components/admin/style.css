@@ -162,3 +162,43 @@
     justify-content: space-between;
     cursor: pointer;
 }
+#btn{
+    width: 200px !important;
+    margin-right: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+button{
+    margin-right: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.inputSearch-form{
+    margin-left: 12px;
+    border-radius: 20px;
+    padding: 8px;
+    margin-right: 8px;
+    width: 300px;
+}
+#table{
+    padding: 30px;
+}
+
+.movie-data{
+    font-size: large;
+    color: #004B77;
+    font-weight: bold;
+    margin: 12px;
+}
+
+.dashboard-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.search-form{
+    margin-left: 150px;
+    display: flex;
+    justify-content: flex-end;
+}

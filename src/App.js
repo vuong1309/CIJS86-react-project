@@ -41,8 +41,13 @@ function App() {
         <Route path='/account' element={<Account />} />
       </Routes>
       <Routes>
-        <Route path='/admin' element={<AdminLogin />} />
-        <Route path='/adminafterlogin' element={<Admin />} />
+
+      <Route path="/admin" 
+            element={isAuthenticated ? <Navigate to="/dashboard" /> : <AdminLogin />}
+        />
+        <Route path="/dashboard"
+            element={isAuthenticated ? <Admin /> : <Navigate to="/admin" />}
+        />
         <Route path="/admin/users" element={<Users/>} />
         <Route path="/admin/films" element={<Films/>} />
         <Route path="/admin/films/add" element={<AddMovieForm/>} />
