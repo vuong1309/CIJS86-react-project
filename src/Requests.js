@@ -7,6 +7,11 @@
 //     requestUpcoming: `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}`
 // };
 
-const requests = `https://64e4cb01c55563802913c797.mockapi.io/movies`;
+const requests = {
+    requestRow: `https://64e4cb01c55563802913c797.mockapi.io/movies`,
+    requestMain: `https://64fd3ed6596493f7af7e2216.mockapi.io/movies`
+}
+
+
 
 export default requests;
