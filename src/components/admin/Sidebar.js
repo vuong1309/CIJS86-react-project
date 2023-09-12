@@ -20,6 +20,14 @@ function Sidebar({menu}) {
         });
     }, [location.pathname])
 
+    const user = JSON.parse(localStorage.getItem("user"));
+    const handleLogout = () => {
+        // Remove user data from localStorage
+        localStorage.removeItem("user");
+        // Redirect to the Login page
+        window.location.href = "/admin";
+        };
+
 
     const __navigate = (id) => {
         setActive(id);
@@ -50,7 +58,8 @@ function Sidebar({menu}) {
                         <img 
                             src={LogoutIcon}
                             alt='icon-logout'
-                            className='sidebar-item-icon' />
+                            className='sidebar-item-icon' 
+                            onClick={handleLogout}/>
                     </div>
                 </div>
             </div>

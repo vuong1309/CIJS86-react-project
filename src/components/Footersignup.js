@@ -1,76 +1,75 @@
-import React from 'react';
+import React from "react";
+
 
 const Footersignup = () => {
-    return (
-        <>
-        <div class="w-full bg-black text-white">
-
-            <div class="w-full p-10 space-y-2">
-            <div class="">Questions? Call 000-800-040-1843
-            </div>
-
-            <div class="flex flex-wrap w-full flex my-4">
-
-                <div class="sm:w-1/4 w-1/2">
-
-                <ul class="space-y-2">
-                    <li>FAQ </li>
-                    <li>Investor Relations</li>
-                    <li>Privacy</li>
-                    <li>Speed Test</li>
-
-                </ul>
-                </div>
-                <div class="sm:w-1/4 w-1/2">
-                <ul  class="space-y-2">
-                    <li class="">Help Centre </li>
-                    <li class=""> Jobs</li>
-                    <li class=""> Cookie Preferences</li>
-                    <li class=""> Legal Notices</li>
-                </ul>
-                </div>
-                <div class="sm:w-1/4 w-1/2">
-                <ul  class="space-y-2">
-                    <li class="">Account </li>
-                    <li class="">Ways to Watch </li>
-                    <li class="">Corporate Information </li>
-                    <li class="">Netflix Originals </li>
-
-                </ul>
-
-                </div>
-                <div class="sm:w-1/4 w-1/2">
-                <ul  class="space-y-2">
-                    <li class=""> Media Centre</li>
-                    <li class="">Terms of Use </li>
-                    <li class="">Contact Us </li>
-                </ul>
-                </div>
-
-            </div>
-
-            <div class=" space-y-4 pt-3" >
-                
-                <div class="">
-                        <select class="bg-transparent rounded border border-white px-4 py-1  text-white" name="" id="cars">
-
-                        <span class="text-black">
-                            <option value="">English</option>
-                            <option value="">Tiếng Việt</option>
-                        </span>
-                        </select>
-
-                    </div>
-                
-                
-                <div class="">Netflix</div>
-
-            </div>
-            </div>
-
+  return (
+    <div className='relative bottom-0 bg-[#000000]/75 text-[#737373] py-24 max-w-[1375px] mx-auto md:w-[80%] md:mx-auto'>
+      <div className=' md:my-0'>
+        <span className="nounderline hover:underline">
+        <a href="#">Questions? Contact us.</a>
+        </span>
+        <div>
+          <ul className='mt-12 grid gap-3 text-sm 
+          sm:grid-cols-2
+          md:grid-cols-3
+          lg:grid-cols-4'>
+            <li className="nounderline hover:underline">
+              <a href="#">FAQ</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Help Center</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Account</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Media Center</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Investor Relations</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Jobs</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Redeem Gift Cards</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Buy Gift Cards</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Ways to Watch</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Privacy</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Cookie Preferences</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Corporate Information</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Contact Us</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Speed Test</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Legal Notices</a>
+            </li>
+            <li className="nounderline hover:underline">
+              <a href="#">Only on Netflix</a>
+            </li>
+          </ul>
         </div>
-        </>
-    );
+        <p className="pt-10 text-sm ">Netflix Vietnam</p>
+      </div>
+    </div>
+  );
 };
 
 export default Footersignup;

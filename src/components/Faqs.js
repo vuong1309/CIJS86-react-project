@@ -13,7 +13,7 @@ const Faqs = (props) => {
 
     return (
         <>
-            <div className={`flex-col bg-[#2D2D2D] max-w-[1375px] max-[1375px]:mx-8 mx-auto text-2xl p-6 mb-2
+            <div className={`flex-col bg-[#2D2D2D] max-w-[1375px] md:w-[80%] md:mx-auto max-[1475px]:mx-8 mx-auto text-2xl p-6 mb-2
             duration-500 group ${item.active === 1 ? 'is-active' : ''}`}>
                 <div className="flex justify-between">
                     <button onClick={handleToggleActive} className="group-[.is-active]:font-bold block">

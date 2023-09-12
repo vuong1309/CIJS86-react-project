@@ -9,6 +9,13 @@ import Dashboard from './Dashboard';
 
 
 const Admin = () => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    const handleLogout = () => {
+        // Remove user data from localStorage
+        localStorage.removeItem("user");
+        // Redirect to the Login page
+        window.location.href = "/admin";
+        };
     return (
         <div>
             <h1 className='text-white'>Admin Page</h1>
@@ -16,11 +23,6 @@ const Admin = () => {
                     <Sidebar menu={sidebar_menu} />
                     
                     <div className='dashboard-body'>
-                        <Routes>
-                            <Route exact path="/admin/dashboard" element={<Dashboard />} />
-                            <Route exact path="/admin/users" element={<div></div>} />
-                            <Route exact path="/admin/films" element={<div></div>} />
-                        </Routes>
                     </div>
                 </div>
         </div>
