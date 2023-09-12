@@ -22,6 +22,11 @@ const Signup = () => {
 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [agreement, setAgreement] = useState(false);
+
+  const handleCkeckbox = (e) => {
+    setAgreement(e.target.checked);
+  } 
 
   // useEffect(() => {
   //     let timeoutId; // Store the timeout ID
@@ -92,6 +97,12 @@ const Signup = () => {
       return;
     }
 
+    if (!agreement) {
+      setError("Please accept the Terms and Conditions!")
+      setLoading(false);
+      return;
+    }
+
     try {
       // Check if the email already exists in the database
       const response = await axios.get(
@@ -124,6 +135,7 @@ const Signup = () => {
       setLoading(false);
     }
   };
+
 
 
   return (
@@ -164,11 +176,12 @@ const Signup = () => {
                 </input>
                 {error && <p className="text-red-600">{error}</p>}
                 <div className='flex justify-between items-center text-sm text-slate-500 mt-3'>
-                  <label for="remember"><input className='mr-2' type='checkbox' id='remember' name="" />I accept <Link to='/' className='text-[#0071eb]'>
+                  <label for="remember">
+                    <input className='mr-2' type='checkbox' name="agreement" onChange={handleCkeckbox} />I accept <Link to='/' className='text-[#0071eb]'>
                     the Terms and Conditions
                   </Link></label>
                 </div>
-                <button className='py-3 my-6 bg-red-600 rounded font-medium' type='submit'>
+                <button className='py-3 my-6 bg-red-600 mr-0 rounded font-medium' type='submit'>
                   {
                     loading ? (
                       <div className='flex justify-center'>
@@ -200,7 +213,6 @@ const Signup = () => {
             </div>
           </div>
         </div>
-        <Footersignup />
       </div>
 
     </>

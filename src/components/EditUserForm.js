@@ -67,10 +67,10 @@ const EditUserForm = ({onClick,show}) => {
             <input type="text" className='inputSearch-form' placeholder='Enter a ID user...'name="id" value={user.id} onChange={handleChange} />
           </label>
         </div>
-        <div className='my-5'>
+        <div className='my-5 '>
           <label>
             Select the attribute to edit:
-            <select className='py-2 w-fit px-0 bg-slate-300 rounded-lg border-0 focus:outline-none focus:ring-0 focus:border-gray-200'value={selectedField} onChange={(e) => setSelectedField(e.target.value)}>
+            <select className='py-2 w-fit px-0 bg-slate-300 rounded-lg border-0 focus:outline-none focus:ring-0 focus:border-gray-200 ml-1'value={selectedField} onChange={(e) => setSelectedField(e.target.value)}>
               <option value="">Select one</option>
               {editableFields.map((field) => (
                 <option key={field} value={field}>

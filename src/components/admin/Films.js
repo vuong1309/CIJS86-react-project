@@ -4,7 +4,6 @@ import sidebar_menu from './Sidebarmenu';
 import './style.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import DeleteMovieForm from '../DeleteMovieForm';
 import EditMovieForm from '../EditMovieForm';
 import { RenderRow } from './MovieRow';
 
@@ -80,9 +79,9 @@ function Films() {
         <div className='dashboard-container'>
             <Sidebar menu={sidebar_menu} />      
             <div className='dashboard-body'>   
-                <div className='dashboard-nav'>
+                <div className='dashboard-nav mt-5'>
                     <div>
-                        <Link to='/admin/films/add' id='btn'class="text-white bg-blue ">Add movie</Link>   
+                        <Link to='/admin/films/add' id='btn'class="text-white bg-black ml-3 ">Add movie</Link>   
                         <button className='text-white bg-red-700 ' onClick={handleClick2}>Edit Movie</button>
 
                     </div>
@@ -113,6 +112,7 @@ function Films() {
                         <th scope='col' className='px-6 py-3'>Title</th>
                         <th scope='col' className='px-6 py-3'>Release Date</th>
                         <th scope='col' className='px-6 py-3'>Original Language</th>
+                        <th scope='col' className='px-6 py-3'>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -122,7 +122,7 @@ function Films() {
                     </tbody>
                     </table>
                 ) : (
-                    <div className='text-center text-2xl'>not found!</div>
+                    <div className='text-center text-2xl'>Loading...!</div>
                 )}
                 </div>
             
